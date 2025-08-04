@@ -1,0 +1,26 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# Ignore PyCharm files
+.idea/
+*.iml
+# Ignore videos
+*.mp4
+*.avi
+*.mov
+# Bytecode
+__pycache__/
+*.pyc
+# Virtual env & secrets
+venv/
+.env
+# Logs
+*.log
+# OS-specific
+.DS_Store
+Thumbs.db
