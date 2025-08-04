@@ -29,6 +29,11 @@ Expense Tracker Application
 ```
 
 ---
+## 🎥 Short Demo
+```bash
+https://drive.google.com/file/d/1h5dWleLJUOxuOcLQRH_4PuxO4sgmGZcH/view?usp=drive_link
+```
+---
 
 ## 📂 Project Structure
 
