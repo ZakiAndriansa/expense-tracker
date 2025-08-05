@@ -1,6 +1,7 @@
 import json
 import os
 from core.utils import format_rupiah
+from tabulate import tabulate
 
 class ExpenseTracker:
     def __init__(self):
@@ -37,8 +38,14 @@ class ExpenseTracker:
             return
 
         print("\nAll Expenses:")
-        print("-" * 50)
-        print("Date | Category | Description | Amount")
+        # print("-" * 50)
+        # print("Date | Category | Description | Amount")
+        # for item in self.expenses:
+        #     print(f"{item['date']} | {item['category']} | {item['description']} | {format_rupiah(item['amount'])}")
+        # print("-" * 50)
+
+        formatted_data = []
         for item in self.expenses:
-            print(f"{item['date']} | {item['category']} | {item['description']} | {format_rupiah(item['amount'])}")
-        print("-" * 50)
+            formatted_data.append((item['date'], item['category'], item['description'], format_rupiah(item['amount'])))
+
+        print(tabulate(formatted_data, headers=["Date", "Category", "Description", "Total Expenses"], tablefmt="rounded_outline"))

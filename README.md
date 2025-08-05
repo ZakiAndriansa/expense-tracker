@@ -10,6 +10,7 @@ A simple terminal-based application to track your daily expenses — fully writt
 - 📅 View all expense history
 - 📂 View total spending grouped by category
 - 📊 View total spending grouped by date
+- 📊 View total spending grouped by month
 - 💾 All data saved locally in a JSON file (`data/expenses.json`)
 - 🧠 Easy to understand and extend — great for beginners!
 
@@ -25,15 +26,33 @@ Expense Tracker Application
 [2] View All Expenses
 [3] Total by Category
 [4] Total by Date
-[5] Exit
+[5] Total by Month
+[6] Exit
 ```
 
 ---
 ## 🎥 Short Demo
 ```bash
-https://drive.google.com/file/d/1h5dWleLJUOxuOcLQRH_4PuxO4sgmGZcH/view?usp=drive_link
+[Version 1.1.0 (Latest)]
+[Version 1.0.0] https://drive.google.com/file/d/1h5dWleLJUOxuOcLQRH_4PuxO4sgmGZcH/view?usp=drive_link
 ```
 ---
+
+## 📖 Changelog
+
+### v1.1.0 (2025-08-05)
+- ➕ Added feature: Total by Month
+- 🎨 Improved CLI layout for better readability and cleaner appearance with tabulate library
+
+---
+
+### v1.0.0 (2025-07-xx)
+- 🚀 Initial release with features:
+    - Add Expense 
+    - View All Expenses 
+    - Total by Category 
+    - Total by Date
+
 
 ## 📂 Project Structure
 
@@ -62,13 +81,16 @@ git clone https://github.com/ZakiAndriansa/expense-tracker.git
 cd expense-tracker
 ```
 
-### 2. Run the app
+### 2. Install requirements
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the app
 
 ```bash
 python main.py
 ```
-
-> No external libraries required. Uses Python's standard library only.
 
 ---
 

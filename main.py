@@ -12,7 +12,8 @@ def show_menu():
     print("[2] View All Expenses")
     print("[3] Total by Category")
     print("[4] Total by Date")
-    print("[5] Exit")
+    print("[5] Total by Month")
+    print("[6] Exit")
 
 def main():
     tracker = ExpenseTracker()
@@ -45,6 +46,9 @@ def main():
             summary.total_by_date()
 
         elif choice == "5":
+            summary.total_by_month()
+
+        elif choice == "6":
             tracker.save_data()
             print("👋 Program ended. Data has been saved.")
             break
