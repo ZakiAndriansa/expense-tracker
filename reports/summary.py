@@ -57,8 +57,11 @@ class SummaryReport:
             total_by_month[month] += item["amount"]
 
         print("\nTotal Expenses by Month:")
+        ordered_months = list(calendar.month_name)[1:]
+
         formatted_data = []
-        for month, amount in total_by_month.items():
-            formatted_data.append((month, format_rupiah(amount)))
+        for month in ordered_months:
+            if month in total_by_month:
+                formatted_data.append((month, format_rupiah(total_by_month[month])))
 
         print(tabulate(formatted_data, headers=["Month", "Total Expenses"], tablefmt="rounded_outline"))
