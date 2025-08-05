@@ -33,7 +33,8 @@ Expense Tracker Application
 ---
 ## 🎥 Short Demo
 ```bash
-[Version 1.1.0 (Latest)]
+[Version 1.1.1 (Latest)] 
+[Version 1.1.0] https://drive.google.com/file/d/1cUwGf6cJMwqGfypLMn4n0ueuI9dCI69E/view?usp=drive_link
 [Version 1.0.0] https://drive.google.com/file/d/1h5dWleLJUOxuOcLQRH_4PuxO4sgmGZcH/view?usp=drive_link
 ```
 ---
