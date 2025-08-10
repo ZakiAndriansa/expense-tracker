@@ -37,7 +37,8 @@ Expense Tracker Application
 ---
 ## 🎥 Short Demo
 ```bash
-[Version 1.2.0 (Latest)] https://drive.google.com/file/d/1wIbNfqCD71YRQUUgh729FbAfCU9VuqSl/view?usp=drive_link
+[Version 1.2.1 (Latest)] https://drive.google.com/file/d/1MJwLyISM1jsFVyb15SWiLfy2SyWi5Wqa/view?usp=drive_link
+[Version 1.2.0] https://drive.google.com/file/d/1wIbNfqCD71YRQUUgh729FbAfCU9VuqSl/view?usp=drive_link
 [Version 1.1.1] https://drive.google.com/file/d/1IUfg_a2Iqyw9vhoxgpgyJBMzVjVE92w_/view?usp=drive_link
 [Version 1.1.0] https://drive.google.com/file/d/1cUwGf6cJMwqGfypLMn4n0ueuI9dCI69E/view?usp=drive_link
 [Version 1.0.0] https://drive.google.com/file/d/1h5dWleLJUOxuOcLQRH_4PuxO4sgmGZcH/view?usp=drive_link
@@ -45,6 +46,11 @@ Expense Tracker Application
 ---
 
 ## 📖 Changelog
+
+### v1.2.1 (2025-08-10)
+- 🛠 Added validation check before saving expense data
+
+---
 
 ### v1.2.0 (2025-08-10)
 - ➕ Added feature: Export expenses to CSV
