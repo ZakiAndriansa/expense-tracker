@@ -13,7 +13,9 @@ def show_menu():
     print("[3] Total by Category")
     print("[4] Total by Date")
     print("[5] Total by Month")
-    print("[6] Exit")
+    print("[6] Export data to csv")
+    print("[7] Import data from csv")
+    print("[8] Exit")
 
 def main():
     tracker = ExpenseTracker()
@@ -49,6 +51,12 @@ def main():
             summary.total_by_month()
 
         elif choice == "6":
+            tracker.export_to_csv("data/backup_expense.csv")
+
+        elif choice == "7":
+            tracker.import_from_csv("data/backup_expense.csv")
+
+        elif choice == "8":
             tracker.save_data()
             print("👋 Program ended. Data has been saved.")
             break

@@ -11,6 +11,8 @@ A simple terminal-based application to track your daily expenses — fully writt
 - 📂 View total spending grouped by category
 - 📊 View total spending grouped by date
 - 📊 View total spending grouped by month
+- 📝 Export expenses to CSV
+- 📝 Import expenses from CSV
 - 💾 All data saved locally in a JSON file (`data/expenses.json`)
 - 🧠 Easy to understand and extend — great for beginners!
 
@@ -27,19 +29,28 @@ Expense Tracker Application
 [3] Total by Category
 [4] Total by Date
 [5] Total by Month
-[6] Exit
+[6] Export data to csv
+[7] Import data from csv
+[8] Exit
 ```
 
 ---
 ## 🎥 Short Demo
 ```bash
-[Version 1.1.1 (Latest)] https://drive.google.com/file/d/1IUfg_a2Iqyw9vhoxgpgyJBMzVjVE92w_/view?usp=drive_link
+[Version 1.2.0 (Latest)] https://drive.google.com/file/d/1wIbNfqCD71YRQUUgh729FbAfCU9VuqSl/view?usp=drive_link
+[Version 1.1.1] https://drive.google.com/file/d/1IUfg_a2Iqyw9vhoxgpgyJBMzVjVE92w_/view?usp=drive_link
 [Version 1.1.0] https://drive.google.com/file/d/1cUwGf6cJMwqGfypLMn4n0ueuI9dCI69E/view?usp=drive_link
 [Version 1.0.0] https://drive.google.com/file/d/1h5dWleLJUOxuOcLQRH_4PuxO4sgmGZcH/view?usp=drive_link
 ```
 ---
 
 ## 📖 Changelog
+
+### v1.2.0 (2025-08-10)
+- ➕ Added feature: Export expenses to CSV
+- ➕ Added feature: Import expenses from CSV
+
+---
 
 ### v1.1.1 (2025-08-05)
 - 📅 Sorted monthly report from January to December for clearer chronological order
@@ -70,7 +81,8 @@ expense-tracker/
 ├── reports/
 │   └── summary.py          # Summary reports by category/date
 ├── data/
-│   └── expenses.json       # Local JSON data storage
+│   ├── expenses.json       # Local JSON data storage
+│   └── backup_expense.csv  # CSV for import
 ├── main.py                 # CLI interface entry point
 ├── requirements.txt        # List of dependencies (if needed)
 └── README.md               # Project documentation
@@ -130,6 +142,7 @@ python main.py
 ## 🛠 Requirements
 
 - Python 3.13 or newer
+- Everything in requirements.txt
 - Works on Windows, macOS, or Linux
 
 ---
