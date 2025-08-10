@@ -41,13 +41,18 @@ Expense Tracker Application
 
 ## 📖 Changelog
 
+### v1.1.1 (2025-08-05)
+- 📅 Sorted monthly report from January to December for clearer chronological order
+
+---
+
 ### v1.1.0 (2025-08-05)
 - ➕ Added feature: Total by Month
 - 🎨 Improved CLI layout for better readability and cleaner appearance with tabulate library
 
 ---
 
-### v1.0.0 (2025-07-xx)
+### v1.0.0 (2025-08-05)
 - 🚀 Initial release with features:
     - Add Expense 
     - View All Expenses 
