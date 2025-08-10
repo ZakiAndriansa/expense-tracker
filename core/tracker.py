@@ -24,8 +24,11 @@ class ExpenseTracker:
             self.expenses = []
 
     def save_data(self):
-        with open(self.filepath, "w") as file:
-            json.dump(self.expenses, file, indent=4)
+        try:
+            with open(self.filepath, "w") as file:
+                json.dump(self.expenses, file, indent=4)
+        except Exception as e:
+            print(f"❌ Unexpected error: {e}")
 
     def add_expense(self, date, category, description, amount):
         data = dict(zip(self.FIELDNAMES, [date, category, description, amount]))
